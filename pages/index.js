@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Education from "./parts/education";
+import Experience from "./parts/experience";
+import Hobbies from "./parts/hobbies";
+import Overview from "./parts/overview";
+import Skills from "./parts/Skills";
+import Footer from "./parts/Footer";
 
 export default function Home() {
   return (
@@ -14,7 +20,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <Overview />
+        <Skills />
+        <Experience />
+        <Hobbies />
+        <Education />
+        <Footer />
+      </main>
 
       <footer className={styles.footer}>
         <a
