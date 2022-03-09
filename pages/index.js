@@ -1,16 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Education from "./parts/education";
-import Experience from "./parts/experience";
-import Hobbies from "./parts/hobbies";
-import Overview from "./parts/overview";
+
+import styles from "styles/Home.module.css";
+
+import Education from "./parts/Education";
+import Experience from "./parts/Experience";
+import Hobbies from "./parts/Hobbies";
+import Overview from "./parts/Overview";
 import Skills from "./parts/Skills";
 import Footer from "./parts/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Shing Ho Tan</title>
         <meta
