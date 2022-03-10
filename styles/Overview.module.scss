@@ -62,17 +62,43 @@
     display: flex;
     flex-direction: row;
     .mainLeft {
-      width: 45%;
+      width: 40%;
       height: 100%;
+      .name {
+        font-family: CeraPro;
+        color: white;
+        font-size: 142px;
+        line-height: 76.2%;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-left: 80px;
+        width: 550px;
+      }
+      .overview {
+        margin-top: 50px;
+        background-color: white;
+        height: 100vh;
+        padding: 50px 70px 0px 80px;
+        font-family: SpaceMono;
+        font-size: 16px;
+        .overviewSecond {
+          margin-top: 20px;
+        }
+        .clickButton {
+          width: 275px;
+          height: 70px;
+          margin-top: 20px;
+        }
+      }
     }
     .mainRight {
-      width: 55%;
+      width: 60%;
       height: 100%;
       position: relative;
       .introduceContainer {
         position: absolute;
         top: 100px;
-        left: 50px;
+        left: 130px;
         .introduceBox {
           padding: 18px 23px 18px 28px;
           border: 1px solid white;
@@ -81,11 +107,11 @@
         }
         .pfpContainer {
           margin-top: 20px;
-          margin-left: 50px;
+          margin-left: 170px;
         }
       }
       .pfpContainer {
-        padding-left: 100px;
+        margin-left: 200px;
       }
     }
   }

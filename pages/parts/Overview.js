@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Card from "pages/components/Card";
+import CursorButton from "pages/components/CursorButton";
 import styles from "styles/Overview.module.scss";
 
 function Overview() {
@@ -36,7 +37,23 @@ function Overview() {
         </div>
       </div>
       <div className={styles.mainContainer}>
-        <div className={styles.mainLeft}></div>
+        <div className={styles.mainLeft}>
+          <div className={styles.name}>SHING HO TAN</div>
+          <div className={styles.overview}>
+            Senior Full Stack Developer specializing in front end development.
+            Experienced with all stages of the development cycle for dynamic web
+            and mobile projects.
+            <div className={styles.overviewSecond}>
+              Well-versed in numerous prog ramming languages and frameworks
+              including JavaScript, React.js, React- Native, Vue.js, Python,
+              Django, Node.js, Java, Spring-boot, ASP.NET. Strong background in
+              project management and customer relations.
+            </div>
+            <CursorButton style={styles.clickButton}>
+              Click and Hire Me
+            </CursorButton>
+          </div>
+        </div>
         <div className={styles.mainRight}>
           <div className={styles.introduceContainer}>
             <div className={styles.introduceBox}>

@@ -46,3 +46,19 @@ img {
   font-weight: bold;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("/assets/fonts/SpaceMono/SpaceMono-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("/assets/fonts/SpaceMono/SpaceMono-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}

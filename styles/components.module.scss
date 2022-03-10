@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
   font-family: "CeraPro";
+}
+
+.animation {
   user-select: none;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
@@ -25,5 +28,32 @@
   }
   &:active {
     text-shadow: none;
+  }
+}
+
+.cardContainer {
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  border: 0px solid black;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0);
+  outline-color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    text-shadow: 1px 1px 2px $secondary;
+  }
+  &:active {
+    text-shadow: none;
+  }
+  .card {
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  .cursorContainer {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

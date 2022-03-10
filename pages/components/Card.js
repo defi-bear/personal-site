@@ -1,11 +1,10 @@
 import cx from "classnames";
-import { Button } from "@chakra-ui/react";
 
 import styles from "styles/components.module.scss";
 
 function Card({ style, children }) {
   return (
-    <div className={cx(style, styles.card)}>
+    <div className={cx(style, styles.card, styles.animation)}>
       <span>{children}</span>
     </div>
   );
