@@ -35,6 +35,34 @@ function Overview() {
           </div>
         </div>
       </div>
+      <div className={styles.mainContainer}>
+        <div className={styles.mainLeft}></div>
+        <div className={styles.mainRight}>
+          <div className={styles.introduceContainer}>
+            <div className={styles.introduceBox}>
+              Senior Full Stack Developer
+            </div>
+            <div className={styles.pfpContainer}>
+              <Image
+                src="/assets/svg/curved_line.svg"
+                alt="curved_line"
+                width="97"
+                height="73"
+                className={styles.pfp}
+              />
+            </div>
+          </div>
+          <div className={styles.pfpContainer}>
+            <Image
+              src="/assets/svg/pfp.svg"
+              alt="shinghotan_pfp"
+              width="830"
+              height="830"
+              className={styles.pfp}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

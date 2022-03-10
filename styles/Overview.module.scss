@@ -58,4 +58,35 @@
       }
     }
   }
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+    .mainLeft {
+      width: 45%;
+      height: 100%;
+    }
+    .mainRight {
+      width: 55%;
+      height: 100%;
+      position: relative;
+      .introduceContainer {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        .introduceBox {
+          padding: 18px 23px 18px 28px;
+          border: 1px solid white;
+          color: white;
+          font-family: CeraPro;
+        }
+        .pfpContainer {
+          margin-top: 20px;
+          margin-left: 50px;
+        }
+      }
+      .pfpContainer {
+        padding-left: 100px;
+      }
+    }
+  }
 }
