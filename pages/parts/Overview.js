@@ -3,21 +3,7 @@ import Image from "next/image";
 import Card from "pages/components/Card";
 import CursorButton from "pages/components/CursorButton";
 import styles from "styles/Overview.module.scss";
-
-const skills = [
-  "JavaSciprt",
-  "React.js",
-  "React-Native",
-  "Node.js",
-  "TypeScript",
-  "Python",
-  "Django",
-  "PHP",
-  "Laravel",
-  "Java",
-  "Rust",
-  "Ruby on Rails",
-];
+import skills from "utils/skills";
 
 function Overview() {
   return (
