@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .illustration {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+  }
+  .label {
+    font-family: CeraPro;
+    font-size: 42px;
+    font-weight: bold;
+  }
+}
