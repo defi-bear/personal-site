@@ -1,7 +1,10 @@
+@import "./variables.scss";
+
 .container {
   height: 100vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   .illustration {
@@ -13,5 +16,123 @@
     font-family: CeraPro;
     font-size: 42px;
     font-weight: bold;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .names {
+      display: flex;
+      flex-direction: row;
+      .name {
+        font-family: SpaceMono;
+        font-size: 24px;
+        opacity: 0.3;
+        margin-left: 25px;
+        margin-right: 25px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .selectedName {
+        opacity: 1;
+        border-bottom: 3px solid #be71ff;
+      }
+    }
+    .details {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      .detailsLeft {
+        width: 40%;
+        .firstRow {
+          display: flex;
+          flex-direction: row;
+          .firstLeft {
+            width: 226px;
+            height: 226px;
+            background: linear-gradient(120deg, $primary, $secondary);
+            font-family: SpaceMono;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .firstRight {
+            width: 226px;
+            height: 226px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .secondRow {
+          display: flex;
+          flex-direction: row;
+          .secondLeft {
+            width: 226px;
+            height: 226px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .secondBlack {
+              width: 162px;
+              height: 162px;
+              background-color: black;
+              font-family: SpaceMono;
+              color: white;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .secondRight {
+            width: 226px;
+            height: 226px;
+            background-color: $secondary;
+            font-family: SpaceMono;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+          }
+        }
+      }
+      .detailsRight {
+        width: 60%;
+        max-width: 800px;
+        .detailsRow {
+          display: flex;
+          flex-direction: row;
+          border-bottom: 1px solid rgba(42, 42, 42, 0.14);
+          align-items: center;
+          margin-top: 25px;
+          padding-bottom: 25px;
+          .leftRect {
+            width: 14px;
+            height: 14px;
+            background-color: rgba(42, 42, 42, 1);
+            margin-right: 40px;
+          }
+          .detailsRowRight {
+            font-family: SpaceMono;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 1);
+          }
+        }
+      }
+    }
   }
 }

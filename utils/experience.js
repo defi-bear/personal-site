@@ -1,4 +1,4 @@
-[
+const experience = [
   {
     name: "Ora",
     startDate: "7/2021",
@@ -89,11 +89,10 @@
       "Checking the app’s security real-time using several platforms and improve using top minification of the code, encrypt database",
       "Build Native components and make bridge module for using in React-Native",
       "Integrating with Salesforce, Google APIs, Microsoft Dynamics, Outlook…",
-      "Carry out quality assurance tests to discover errors and optimize usability",
-      "Used i18n for multi language support",
       "OCR technology for scanning business card image ",
       "Google Language API for getting the meaning of scanned words",
       "Worked on many image processing work like rotating, cropping, drawing",
     ],
   },
 ];
+export default experience;
