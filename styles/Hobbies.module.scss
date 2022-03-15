@@ -31,5 +31,11 @@
     }
   }
   .right {
+    position: relative;
+    .cursor {
+      position: absolute;
+      bottom: 150px;
+      left: -100px;
+    }
   }
 }

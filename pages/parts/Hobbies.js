@@ -46,6 +46,14 @@ function Hobbies() {
           height="521"
           alt="Computer"
         />
+        <div className={styles.cursor}>
+          <Image
+            src="/assets/svg/left_curved_arrow.svg"
+            width="96"
+            height="81"
+            alt="Left Curved Cursor"
+          />
+        </div>
       </div>
     </div>
   );
