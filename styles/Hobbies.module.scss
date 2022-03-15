@@ -3,8 +3,32 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   .left {
-    width: 60%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    .label {
+      font-family: CeraPro;
+      font-size: 42px;
+      font-weight: bold;
+      color: #2a2a2a;
+    }
+    .hobbiesList {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      .card {
+        padding: 6px 66px;
+        border: 1px solid #2a2a2a;
+        border-radius: 4px;
+        margin-right: 16px;
+        line-height: 51.14px;
+      }
+      .frame {
+        margin-right: 10px;
+      }
+    }
   }
   .right {
   }
