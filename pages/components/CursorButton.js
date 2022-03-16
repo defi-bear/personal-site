@@ -3,15 +3,24 @@ import Image from "next/image";
 
 import styles from "styles/components.module.scss";
 
-function CursorButton({ style, children }) {
+function CursorButton({ style, reversed, children }) {
   return (
-    <div className={cx(style, styles.cardContainer, styles.animation)}>
+    <div
+      className={cx(
+        style,
+        styles.cardContainer,
+        styles.animation,
+        reversed && styles.reversed
+      )}
+    >
       <div className={styles.card}>
         <span>{children}</span>
       </div>
       <div className={styles.cursorContainer}>
         <Image
-          src="/assets/svg/right.svg"
+          src={
+            reversed ? "/assets/svg/whiteRight.svg" : "/assets/svg/right.svg"
+          }
           alt="right_cursor"
           width="6.25"
           height="10.5"

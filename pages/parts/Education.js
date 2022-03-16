@@ -7,6 +7,7 @@ function Education() {
       justifyContent="center"
       alignItems="center"
       position="relative"
+      minHeight="100vh"
     >
       <Box position="absolute" left="-100px" top="-100px">
         <Image
