@@ -8,6 +8,7 @@ function Education() {
       alignItems="center"
       position="relative"
       minHeight="100vh"
+      id="Education"
     >
       <Box position="absolute" left="-100px" top="-100px">
         <Image

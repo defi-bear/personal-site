@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Card from "pages/components/Card";
 import CursorButton from "pages/components/CursorButton";
@@ -7,7 +8,7 @@ import skills from "utils/skills";
 
 function Overview() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Overview">
       <div className={styles.imgContainer}>
         <Image
           src="/assets/png/summary_vector.png"
@@ -20,17 +21,42 @@ function Overview() {
       <div className={styles.headerContainer}>
         <div className={styles.header}>
           <div className={styles.headerLeft}>
-            <Image
-              src="/assets/svg/logo_text.svg"
-              alt="shinghotan_logo"
-              width="100"
-              height="35"
-              className={styles.logo}
-            />
-            <div className={styles.headerItem}>Summary</div>
-            <div className={styles.headerItem}>Skills</div>
-            <div className={styles.headerItem}>Experience</div>
-            <div className={styles.headerItem}>Education</div>
+            <Link passHref={true} href="#">
+              <a>
+                <Image
+                  src="/assets/svg/logo_text.svg"
+                  alt="shinghotan_logo"
+                  width="100"
+                  height="35"
+                  className={styles.logo}
+                />
+              </a>
+            </Link>
+            <Link passHref={true} href="#">
+              <a>
+                <div className={styles.headerItem}>Summary</div>
+              </a>
+            </Link>
+            <Link passHref={true} href="#Skills" scroll={false}>
+              <a>
+                <div className={styles.headerItem}>Skills</div>
+              </a>
+            </Link>
+            <Link passHref={true} href="#Experience" scroll={false}>
+              <a>
+                <div className={styles.headerItem}>Experience</div>
+              </a>
+            </Link>
+            <Link passHref={true} href="#Hobbies" scroll={false}>
+              <a>
+                <div className={styles.headerItem}>Hobbies</div>
+              </a>
+            </Link>
+            <Link passHref={true} href="#Education" scroll={false}>
+              <a>
+                <div className={styles.headerItem}>Education</div>
+              </a>
+            </Link>
           </div>
           <div className={styles.headerRight}>
             <Card

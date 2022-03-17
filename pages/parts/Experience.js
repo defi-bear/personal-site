@@ -8,7 +8,7 @@ import expList from "utils/experience";
 function Experience() {
   const [selected, setSelected] = useState(0);
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Experience">
       <div className={styles.illustration}>
         <Image
           alt="Illustration"

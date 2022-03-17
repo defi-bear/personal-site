@@ -5,7 +5,7 @@ import Card from "pages/components/Card";
 
 function Hobbies() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Hobbies">
       <div className={styles.left}>
         <div className={styles.label}>Hobbies</div>
         <div className={styles.hobbiesList}>

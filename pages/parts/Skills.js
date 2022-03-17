@@ -6,7 +6,7 @@ import skills from "utils/skills";
 
 function Skills() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Skills">
       <div className={styles.leftSkill}>
         <Image
           alt="Skill Img"
