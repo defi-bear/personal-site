@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import styles from "styles/components.module.scss";
 
-function CursorButton({ style, reversed, children }) {
+function CursorButton({ style, reversed, children, link }) {
   return (
     <div
       className={cx(
@@ -13,7 +13,12 @@ function CursorButton({ style, reversed, children }) {
         reversed && styles.reversed
       )}
     >
-      <div className={styles.card}>
+      <div
+        className={styles.card}
+        onClick={() =>
+          link && window.open(link, "_blank", "noopener,noreferrer")
+        }
+      >
         <span>{children}</span>
       </div>
       <div className={styles.cursorContainer}>

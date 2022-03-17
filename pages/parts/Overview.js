@@ -33,7 +33,12 @@ function Overview() {
             <div className={styles.headerItem}>Education</div>
           </div>
           <div className={styles.headerRight}>
-            <Card style={styles.rightButton}>Click and Hire Me</Card>
+            <Card
+              style={styles.rightButton}
+              link="mailto:talenteyedev@gmail.com"
+            >
+              Contact me
+            </Card>
           </div>
         </div>
       </div>
@@ -50,8 +55,11 @@ function Overview() {
               Django, Node.js, Java, Spring- boot, ASP.NET. Strong background in
               project management and customer relations.
             </div>
-            <CursorButton style={styles.clickButton}>
-              Click and Hire Me
+            <CursorButton
+              style={styles.clickButton}
+              link="mailto:talenteyedev@gmail.com"
+            >
+              Contact me
             </CursorButton>
           </div>
         </div>

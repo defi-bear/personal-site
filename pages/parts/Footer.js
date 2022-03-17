@@ -35,7 +35,11 @@ function Footer() {
             <CustomInput placeholder="Name" mt="10" />
             <CustomInput placeholder="Email" mt="5" />
             <CustomInput placeholder="Attach Project Details" mt="5" />
-            <CursorButton reversed style={styles.cursorButton}>
+            <CursorButton
+              reversed
+              style={styles.cursorButton}
+              link="mailto:talenteyedev@gmail.com"
+            >
               Lets Start
             </CursorButton>
           </Flex>
