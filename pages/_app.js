@@ -1,5 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.scss";
+import "utils/firebase";
 
 function MyApp({ Component, pageProps }) {
   return (
